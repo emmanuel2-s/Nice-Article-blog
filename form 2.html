@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    .name{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 5px auto 15px auto;
+    
+    }
+
+    .pre,.signbtn {
+    padding: 6px 20px;
+    margin-left: 10%;
+    width: 100px;
+}
+.bt{
+    display: flex;
+}
+
+body{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url('img_forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+</style>
+
+<body>
+    <form class="formss animate">
+
+             <h2 class="step">Step 2</h2>
+            <label>Username: <input type="text" class="lbb" placeholder="Enter username" required></label>
+            <label>Password: <input type="text" class="lbb" placeholder="Enter password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required></label>
+            <label>Confirm Password: <input type="text" class="lbb" placeholder="Repeat password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required></label>
+
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+
+            <label for="certificate">Certificate:</label>
+            <select name="user_cert" id="certificate">
+                <option value="Masters degree">Masters degree</option>
+                <option value="graduate">Graduate</option>
+                <option value="hnd degree">HND degree</option>
+                <option value="ond degree">OND degree</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="o level">O Level certificate</option>
+            </select>
+            <label>Upload image/file: <input type="file" required></label>
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                    Privacy</a>.
+            </p>
+          <div class="bt">
+           <button type="button" onclick="previous()" id="prebtn" class="pre">Previous</button> 
+
+            <a href="main.html"><button type="submit" class="signbtn">Sign Up</button></a>
+          </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

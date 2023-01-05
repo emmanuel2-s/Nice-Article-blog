@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nice Write Up Articles</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="myLoader()">
+
+        <header>
+            <img src="appIcon2x.png" alt="logo symbol">
+            <h1 class="intro">Nice Write Up Articles</h1>
+            <span>Always informed to give you the best</span>
+        </header>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">articles</a></li>
+                <li><a href="#">formats</a></li>
+                <li><a href="#">profile</a></li>
+                <input type="search" id="search" class="search" placeholder="search">
+                <button class="sign clearfix" onclick="document.getElementById('signp').style.display = 'block'">Sign
+                    Up</button>
+                <button class="login clearfix"
+                    onclick="document.getElementById('modal').style.display = 'block'">Login</button>
+            </ul>
+        </nav>
+
+        <div id="loader"></div>
+
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <div class="pp">
+            <p>The write up articles is a combination that is made up of so many write ups like : </p>
+        </div>
+
+        <div class="wrap">
+            <small>#main articles</small>
+            <li><a href="#novels">novels</a></li>
+            <li><a href="#">formats</a></li>
+            <li><a href="#languages">languages</a></li>
+            <li><a href="#software">software programming</a></li>
+            <li><a href="#">newsletters</a></li>
+        </div>
+
+
+
+        <div id="modal" class="login-modal">
+            <span onclick="document.getElementById('modal').style.display = 'none'" class="close"
+                title="close-modal">&times;</span>
+
+            <form class="form-content animate" action="/html/new port.html">
+                <div class="container">
+
+                    <label for="uname"><b>Username:</b></label>
+                    <input type="text" name="uname" placeholder="Enter Username or Email" class="texty" required>
+
+                    <label for="pword"><b>Password:</b></label>
+                    <input type="password" id="pword" value="" placeholder="Password" class="texty" required>
+
+                    <span class="psw"><a href="#">Forget Password?</a></span>
+
+                    <label><input type="checkbox" onclick="myFunction()" id="pass" class="show">Show Password</label>
+
+                    <label><input type="checkbox" checked="checked" name="rem" class="rem"><em> Remember me</em></label>
+
+                    <button type="submit" class="submit" >Login</button>
+
+                </div>
+        </div>
+        </form>
+
+
+
+
+        <div id="signp" class="sign-up">
+            <span onclick="document.getElementById('signp').style.display = 'none'" title="close modal"
+                class="ccl">&times;</span>
+
+            <form class="formss animate">
+                <div class="containers">
+
+                    <div class="name" id="name" style="display: none;">
+                        <h1>Sign Up</h1>
+                        <p>please fill in this form to create an account</p>
+                        
+                   <h2 class="step">Step 1</h2>
+
+                        <label>firstName: <input type="text" class="lbb" required></label>
+                        <label>lastName: <input type="text" class="lbb" required></label>
+                        <label>Email: <input type="email" class="lbb" required></label>
+                        <label>phone No: <input type="tel" class="lbb" required></label>
+                        <label>Country of origin: <input type="text" class="lbb" required></label>
+                        <label>State: <input type="text" class="lbb" required></label>
+
+                       <a href="form 2.html"><button type="button" class="ctl" id="ctl">Continue</button></a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="contents" id="novels">
+
+            <div class="parallex"></div>
+            <div class="main-cnt">
+                <h2>Novels</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Assumenda nemo fuga soluta possimus dolorum nesciunt laborum ab?
+                    Cupiditate magni officiis odit labore dolores, ut esse consequatur expedita quis, ratione dicta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum debitis ut impedit quidem!
+                    Hic possimus debitis autem quo modi nemo vel asperiores veniam minus maiores architecto distinctio
+                    itaque,
+                    nulla atque!
+                </p>
+            </div>
+
+            <div class="parallex-2"  id="languages"></div>
+            <div class="main-cnt">
+                <h2>languages</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Assumenda nemo fuga soluta possimus dolorum nesciunt laborum ab?
+                    Cupiditate magni officiis odit labore dolores, ut esse consequatur expedita quis, ratione dicta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum debitis ut impedit quidem!
+                    Hic possimus debitis autem quo modi nemo vel asperiores veniam minus maiores architecto distinctio
+                    itaque,
+                    nulla atque!
+                </p>
+            </div>
+
+
+            <div class="parallex-3" id="software"></div>
+            <div class="main-cnt">
+                <h2>Software programming</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Assumenda nemo fuga soluta possimus dolorum nesciunt laborum ab?
+                    Cupiditate magni officiis odit labore dolores, ut esse consequatur expedita quis, ratione dicta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum debitis ut impedit quidem!
+                    Hic possimus debitis autem quo modi nemo vel asperiores veniam minus maiores architecto distinctio
+                    itaque,
+                    nulla atque!
+                </p>
+            </div>
+
+
+            <div class="parallex-4" id="profile"></div>
+            <div class="main-cnt">
+                <h2>profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Assumenda nemo fuga soluta possimus dolorum nesciunt laborum ab?
+                    Cupiditate magni officiis odit labore dolores, ut esse consequatur expedita quis, ratione dicta?<br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum debitis ut impedit quidem!
+                    Hic possimus debitis autem quo modi nemo vel asperiores veniam minus maiores architecto distinctio
+                    itaque,
+                    nulla atque!
+                </p>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
